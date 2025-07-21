@@ -1,9 +1,9 @@
-spring:
+spring: 
   datasource:
     driverClassName: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/ostock_dev
     username: postgres
-    password: "{cipher}fje83Ki8403Iod87dne7Yjsl3THueh48jfuO9j4U2hf64Lo"
+    password: "{cipher}8f56ef6d8f583fac6ef2723537be7752b31045ae5983707ec154f55ea3a225a6"
   jpa:
     database: POSTGRESQL
     show-sql: true
@@ -12,6 +12,6 @@ spring:
       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
 management:
   endpoints:
-    web:
+    web:  
       exposure:
         include: "*"
