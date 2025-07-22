@@ -1,0 +1,6 @@
+custom:
+    name: develop
+example:
+    property: "I AM HW DEV"
+server:
+  port: 8083

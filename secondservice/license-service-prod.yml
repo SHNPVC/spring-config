@@ -1,0 +1,4 @@
+custom:
+    name: production
+example:
+    property: "I AM HW PROD"
