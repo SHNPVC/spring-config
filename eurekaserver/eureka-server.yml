@@ -1,12 +1,13 @@
 server:
   port: 8070
+
 eureka:
   instance:
-    hostname: localhost
+    hostname: eureka-server  # 서비스 이름으로 변경 (docker-compose.yml에서 'eureka-server'로 설정됨)
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/  # eureka-server로 변경된 주소
   server:
     waitTimeInMsWhenSyncEmpty: 5
